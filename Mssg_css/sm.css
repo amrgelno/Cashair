@@ -1,0 +1,69 @@
+
+/*for small screen*/
+
+@media only screen and (min-width:768px)   
+ {
+	 
+	body{
+		font-size:20px;
+		background:#e7ecef;	
+		
+	}
+	
+	/*home page*/
+	.loadingbg {
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    height: 576%;
+    z-index: 9;
+    margin: -5px -36px 0px -7px;
+}
+
+.logo {
+    position: static;
+    top: unset;
+    margin:0px 150px 78px 50px;
+    /* position: absolute; */
+    left: 416px;
+    opacity: 0.6;
+}
+
+.logosize{
+	width:200px;
+	height:200px;
+	opacity: 40.8;
+}
+.loading {
+    margin: -346px 661px;
+    font-size: 25px;
+}
+
+.member_img {
+    position: relative;
+    width: 139px;
+    height: 147px;
+    float: left;
+    TOP: 32PX;
+    left: 59px;
+    text-Align: right;
+    background-position: center;
+    background-size: cover;
+    border-radius: 100%;
+}
+
+
+.text {
+  position:relative;
+  background: #f5f5f5;
+    width: 81%;
+    height: 244px;
+    /* padding-top: 650px; */
+    margin-left: 210px;
+    margin-top: 14px;
+    font-size: 25px;
+    margin-bottom: 50px;
+    text-Align: right;
+}
+
+}
