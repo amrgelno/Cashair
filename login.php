@@ -29,7 +29,7 @@
 <body style="background-image:url(img/backcover.jpg);">
     
 <div class="form">
-<font size="+3"> sir consult technical support team  </font>
+<font size="+3"> Welcome to Quick Invoice  </font>
 <br /><br />
 <form action="submit.php"  method="post">
 

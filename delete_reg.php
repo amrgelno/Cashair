@@ -27,7 +27,7 @@ public function sql(){
 	?>
     
 <?php
-include("con_db.php");
+include("con_db2.php");
 $sql="select * from  users";
 
 $query=$this->connectF()->query($sql);	
@@ -35,16 +35,13 @@ $query=$this->connectF()->query($sql);
 while($column=mysqli_fetch_object($query)){
 ?>
 <tr>
-<td>  <?php echo $column->Name?>         </td>
-<td>   <?php echo $column->Email?>         </td>
-<td>   <?php echo $column->password?>         </td>
-<td>   <?php echo $column->Mobile?>         </td>
+<td>  <?php echo $column->username?>         </td>
 <td>   <?php echo $column->user_TYPE?>         </td>
 <td><form action="?page"    method="post">
 <input type="hidden" name="ID" value="<?php echo $column->ID?>" />
 <select name="user_TYPE">
 <option value="Admin">Admin</option>
-<option  value="customer_service">customer_service</option>
+<option  value="cashair">cashair</option>
 </select>
 <input type="submit" name="update" value="update" />
 </form>
@@ -60,7 +57,7 @@ while($column=mysqli_fetch_object($query)){
 ?>
 </table>
 <?php
-include("con_db.php");
+include("con_db2.php");
 @$ID=$_POST['ID'];
 $delete="delete  from  users  where  ID=$ID ";
 if(@$_POST['delete']){
@@ -72,7 +69,7 @@ echo'<meta http-equiv="refresh" content="1,url=delete_reg.php">';
 }
 ?>
 <?php
-include("con_db.php");
+include("con_db2.php");
 @$ID=$_POST['ID'];
 @$usertype=$_POST['user_TYPE'];
 $update="update users Set  user_TYPE='$usertype'   where  ID=$ID "; 

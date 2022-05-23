@@ -98,7 +98,7 @@ margin: -196px 10px;
 <body>
 <?PHP
 if(@$_POST['submit']){
-include("con_db.php");
+include("con_db2.php");
 $email=$_POST['Email'];
 $PASSWORD=$_POST['password'];
 
@@ -106,7 +106,7 @@ $PASSWORD=$_POST['password'];
 if($_SERVER["REQUEST_METHOD"] == "POST");
 
 
-$sql="select * from users where Email='$email' AND password='$PASSWORD' " ;
+$sql="select * from users where email='$email' AND password='$PASSWORD' " ;
 
 
 $query = mysqli_query($connect,$sql);
@@ -121,17 +121,17 @@ $query = mysqli_query($connect,$sql);
 		else{
 		$user_type=$column["user_TYPE"];
 		
-		if($user_type==Admin){
+		if($user_type=='Admin'){
 		#open  Admin control		
 		$_SESSION['Email']=@$email;
 		$_SESSION['password']=@$PASSWORD;
         include("Admin.php");          		
 	                        }
-        elseif($user_type==cashair){
+        elseif($user_type=='cashair'){
 		#open  users	 control	
 		$_SESSION['Email']=@$email;
 		$_SESSION['password']=@$PASSWORD;
-        include("customer_service.php");          		
+        include("seles rep.php");          		
 	                        }
 							
 	
@@ -142,7 +142,25 @@ $query = mysqli_query($connect,$sql);
 ?>
 
  
+  <?php 
+include("con_db2.php");
+
+@$nvnoID=$_POST['INVOID'];   //   تاكيد  زرار
+
+@$paid =$_POST['p_method'];  //   فاتورة مبيعات
+
+@$username =$_POST['username'];
+
+@$paidQ="Update  invno   SET  paid='$paid'   where    ID ='$nvnoID' ";
  
+ 
+ if(@$_POST['cash']){
+	 
+
+mysqli_query($connect,$paidQ);	 
+	  
+ }
+  ?>
 
 
 </div>

@@ -5,14 +5,16 @@
 </head>
 <body>
 <?php 
- include("con_db.php");
+
+ include("con_db2.php");
+
 $username=$_POST['username'];
+$lastname=$_POST['lastname'];
 $e_mail=$_POST['email'];
 $password=$_POST['password'];
-$Mobile=$_POST['Mobile'];
 $user_TYPE=$_POST['user_TYPE'];
-$select= "select * from  users  where Name='$username' or  email='$e_mail'  ";
-$insert="INSERT INTO users (Name,Email,password,Mobile,user_TYPE,Date) vaLues ('$username','$e_mail','$password','$Mobile','$user_TYPE',now())";
+$select= "select * from  users  where username='$username' or  email='$e_mail'  ";
+$insert="INSERT INTO users (username,lastname,email,password,user_TYPE) vaLues ('$username','$lastname','$e_mail','$password','$user_TYPE')";
 $query=mysqli_query($connect,$select); 
 if ($_POST['submit']){
 	if($column=mysqli_fetch_array($query)){

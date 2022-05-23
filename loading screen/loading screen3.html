@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+<style type="text/css">	
+#dev1 {
+    margin: 38px 590px;
+    width: 40px;
+    height: 10px;
+    background: aliceblue;
+    float: left;
+	border-radius:50px;
+}
+#dev2 {
+    margin: 38px 650px;
+    width: 40px;
+    height: 10px;
+    background: aliceblue;
+    border-radius: 50px;
+}
+#dev3 {
+    margin: -49px 710px;
+    width: 40px;
+    height: 10px;
+    background: aliceblue;
+    float: left;
+	border-radius:50px;
+}
+.enime {
+    position: absolute;
+    /* margin: -5px; */
+	background:#00F;
+    width: 40px;
+    height: 10px;
+	animation:animate 3s  infinite ease-in-out;
+    border-radius:50px;
+}
+#loading {
+    margin: 150px 0px 1px 610px;
+    width: 520px;
+    height: 3px;
+    padding: 1px 0px 0px 20px;
+    font-size: 20px;
+	font-weight:bold;
+	font-style:italic;
+}
+
+.logo {
+    width: 50px;
+    height: 10px;
+    margin: 210px 460px ;
+}
+
+.loading-screen {
+    margin-top: -140px;
+}
+body {
+    background: #fcfdfb;
+}
+	
+@keyframes animate{
+	5%{transform:translateX(0px)}
+	 
+	85%{transform:translateX(0px)}
+	
+	95%{transform:translateX(130px)}	
+	}
+</style>
+<body>
+<div class="loading-screen"><div class="logo"><img src="SHLAH-Recovered.png" width="420" height="360" /></div>
+<div id="loading">loading...</div>
+<div id="dev1"><span class="enime"></span></div>
+<div id="dev2">  </div>
+<div id="dev3"> </div>    </div>
+</body>
+</html>

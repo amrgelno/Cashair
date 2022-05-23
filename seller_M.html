@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="js/jquery-1.11.0.min.js"></script>
+<meta name="viewport" content="width = device-width,">
+<link href="css/xs.css" rel="stylesheet" type="text/css"/>
+<link href="css/sm.css" rel="stylesheet" type="text/css"/>
+<link href="css/lg.css" rel="stylesheet" type="text/css" />
+<link href="css/md.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<script src="jquery-1.11.0.min.js"></script>
+<title>Untitled Document</title>
+</head>
+<body>
+
+<button class="btt1"><a href="#nav">≡</a></button>
+<ul id="nav">
+<li><img src="SHLAH-Recovered.png" width="220" height="150" style="background-color:#FFF; border-radius:10px;" />profile pic</li>
+<Li><a href="Salah-landingpage2.HTML"><img src="Picture2.png" width="20" height="20" /> username   اسم المستخدم </a></Li>
+<li><a href=""><img src="Picture2.png" width="20" height="20" /> Email  الايميل</a></li>
+<li> <a href=""><img src="Picture2.png" width="20" height="20" />  اعدادت المعلومات الشخصية </a></li>
+<li><a href=""><img src="Picture2.png" width="20" height="20" />   اعدادات الصفحة  </a></li>
+<li> <a href=""><img src="Picture2.png" width="20" height="20" />تسجيل خروج   </a></li>
+<li> <a href=""><img src="Picture2.png" width="20" height="20" />عرض المعلومات الشخصية   </a></li>
+</ul>
+<div class="cover">
+<img src="img/banner.png" class="imgcover" />
+<input   type="file" id='file-input' class="bt_pic2"  value="insphoto" style="display:none;"/> 
+<label for="file-input"><img src="camera.png" width="50px" height="50px" /> </label>
+</button><div class="profilepic">
+<input    type="file"  class="bt_pic"  style="display:none;"/>
+<label for="file-input"><img src="camera.png" width="50px" height="50px" class="camera" /> </label>
+</div> 
+
+<img src="img/luxor  store.png" class="imgcover" /></div>
+
+<div class="ful_info">
+<label for="  ">     معلومات البائع</label> <br />
+<div class="معلومات البائع ">                
+الشركة  :- <input  type="text"   value=" "   placeholder="Yourcompany"   name="company"/>            <br /><br />
+المنطقة :- <input  type="text"   value=" "   placeholder="distantion"  name="distantion" />                        <br />   <br/>
+المحافظة:-<input  type="text"   value=" "   placeholder="country"  name="country" />                    <br />   <br/>
+<Input  type="submit"  value="تعديل"   name="change" />
+
+                            <br/>
+</div>
+
+<hr />
+<div class="معلومات الاتصال ">       
+<label for=""> معلومات الاتصال             </label><br /><br />          
+ الايميل  :-<input  type="text"   value=" "   placeholder="Yourcompany"   name="Email"/>                        <br /><br />
+رقم موبيل :- <input  type="text"   value=" "   placeholder="Yourcompany"   name="Mobile"/>                       <br/><br />
+facebook:-  <input  type="text"   value=" "   placeholder="Yourcompany"   name="face"/>                         <br /><br />
+instgrame:-  <input  type="text"   value=" "   placeholder="Yourcompany"   name="insta"/>                         <br/><br />
+linkedin:-   <input  type="text"   value=" "   placeholder="Yourcompany"   name="linked"/>                      
+<Input  type="submit"  value="تعديل"   name="change2" />
+</div>
+
+<br /><br /><br /><br />
+<hr />
+<form  action=" "  method="">
+<label for="">   أضافة معروض             </label><br /><br />
+ المعروض  :-<input  type="text"   value=" "   placeholder="Yourproduct"   name="Email"/>                        <br /><br />
+سعر المعروض :- <input  type="text"   value=" "   placeholder="productprice"   name="Mobile"/>                       <br/><br />
+
+<label for="">  تفاصيل المعروض            </label><br />
+سعر المعروض :- <input  type="text"   value=" "   placeholder="productprice"   name="Mobile"/>                       <br/><br />
+المنطقة :- <input  type="text"   value=" "   placeholder="distantion"  name="distantion" />                        <br />
+<Input  type="submit"  value="اضافة"   name="ADD" />
+<form>
+
+<br/><br /><br/><br />
+
+
+<hr />
+<label for="">  قائمة منتجات             </label><br /><br /><br /><br />
+<div class="product">
+<div class="pr_ITEM">
+<div class="IMG_ITEM">slider</div>
+<DIV  class="pr_info">    
+<span  class="N_seller"> اسم البائع</span><br/><br/>
+<span class="ver_pr">  المعروض <span><br/><br/>
+<span  class="price"> سعر المعروض <span><br/><br/>
+</div>
+</div>
+</div>
+
+
+
+
+<div>  <!--FINAL DIV -->
+<!--
+<div class="Buyform">  <form action="post.php"   method="post">
+أسمك&nbsp; &nbsp; &nbsp;
+<input type="text"  name="username"  title="insert your first name a-z " pattern="[ا-يa-zA-Z' ']{3,10}"    class="inputs" autocomplete="off" autofocus  required="required" ><br /><br />
+المنتج التي تود شراءها من القائمة&nbsp; &nbsp; &nbsp;
+<input type="text"  name="product" title="select your product" pattern="[ا-يa-zA-Z' ']{3,10}"    class="inputs" required="required"><br /><br />
+الايميل&nbsp; &nbsp; &nbsp;
+<input type="email"  name="email"  title="insert your E-MAIL ETC name@YAHOO.COM "   required "required" class="inputs"><br /><br />
+مركز&nbsp; &nbsp; &nbsp;
+<input type="text"  name="country"  class="inputs"    required="required"><br /><br />
+التليفون&nbsp; &nbsp; &nbsp;
+<input type="text"  name="Tele"  maxlength='11'  pattern="[0-9]+"   class="inputs" required="required"><br /><br />
+الرسالة التي تود ايضاحها او معلومات أخرى<br />
+<textarea   name="massage"   rows="9" cols="35"    required="required"> </textarea><br /><br /><br />
+<br />
+
+<input type="submit"  name="submit"  class="submitbt1"><br />
+</form><br />
+
+
+</div>-->
+<div class="map">      </div>
+<script>
+$(document).ready(function(){
+$('button').click(function(){
+$('#nav').fadeToggle()
+$('#nav').animate({left:"30px"},1550);	   	   
+});	    
+});
+</script>
+<script>
+$(document).ready(function(){
+    $("#loader").delay(15000).fadeOut("slow");   
+    });
+</script>
+<div class="Brand"><img src="img/logo.png" class="logo2"/></div>
+<hr />
+<div class="title">   </div>
+
+
+<hr />
+</div>
+</body>
+</html>
